@@ -1,0 +1,43 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+@import 'base/mixin';
+@import 'base/variables';
+@import 'libs/fonts';
+@import 'blocks/main';
+@import 'blocks/sidebar';
+
+
+
+* {
+    font-family: 'Sofia', sans-serif;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.social {
+    font-family: 'Circular Std' , sans-serif;
+}
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+    
+    
+    margin: 0 auto;
+}
+.page {
+    // position: relative;
+    min-height: 100vh;
+    display: flex;
+}
+@import 'blocks/media';

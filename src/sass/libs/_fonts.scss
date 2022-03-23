@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Sofia';
+    font-display: swap;
+    src: local('../fonts/Sofia Pro Bold'), local('Sofia-Pro-Bold'),
+        url('../fonts/SofiaProBold.woff2') format('woff2'),
+        url('../fonts/SofiaProBold.woff') format('woff'),
+        url('../fonts/SofiaProBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+@font-face {
+font-family: 'Sofia';
+font-display: swap;
+src: local('../fonts/Sofia Pro Regular'), local('Sofia-Pro-Regular'),
+    url('../fonts/SofiaProRegular.woff2') format('woff2'),
+    url('../fonts/SofiaProRegular.woff') format('woff'),
+    url('../fonts/SofiaProRegular.ttf') format('truetype');
+font-weight: 400;
+font-style: normal;
+}
+@font-face {
+    font-family: 'Sofia';
+    src: local('../fonts/Sofia Pro Light'), local('Sofia-Pro-Light'),
+        url('../fonts/SofiaProLight.woff2') format('woff2'),
+        url('../fonts/SofiaProLight.woff') format('woff'),
+        url('../fonts/SofiaProLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+@font-face {
+font-family: 'Circular Std';
+font-display: swap;
+src: local('../fonts/Circular Std Medium'), local('Circular-Std-Medium'),
+    url('../fonts/CircularStd-Medium.woff2') format('woff2'),
+    url('../fonts/CircularStd-Medium.woff') format('woff'),
+    url('../fonts/CircularStd-Medium.ttf') format('truetype');
+font-weight: 500;
+font-style: normal;
+}
