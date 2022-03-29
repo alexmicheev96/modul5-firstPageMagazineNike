@@ -5,6 +5,8 @@
 @import 'libs/fonts';
 @import 'blocks/main';
 @import 'blocks/sidebar';
+@import 'blocks/nav-menu';
+@import 'blocks/modal';
 
 
 
@@ -36,8 +38,12 @@ body {
     margin: 0 auto;
 }
 .page {
-    // position: relative;
+    position: relative;
     min-height: 100vh;
+    width: 100%;
     display: flex;
+}
+.hidden {
+    display: none;
 }
 @import 'blocks/media';

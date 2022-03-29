@@ -1,5 +1,154 @@
 .header {
+    position: relative;
     flex: 1 1 auto;
-    padding: 3.375rem 2.375rem 4rem 4.125rem;
+    min-width: 0;
+    padding: 3.375rem 2.375rem 4rem 0;
+    &__wrapper {
+        width: 100%;
+    }
+    &__icons {
+        width: 120px;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link {
+        width: 24px;
+        height: 24px;
+    }
+    &__icon {
+        width: 100%;
+    }
+}
+.card {
+    position: relative;
+    display: flex;
+    width: 100%;
+    &__img-inner {
+        position: relative;
+        flex: 1 1 100%;
+        z-index: -1;
+    }
+    &__img {
+        position: absolute;
+        bottom: -35px;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
 
+    }
+    &__inner {
+        position: absolute;
+        margin-top: 4.375rem;
+        max-width: 32.8125rem;
+    }
+    
+    &__text, &__descr {
+        font-weight: 400;
+        font-size: 1.3125rem;
+        line-height: 1.5;
+        color: #000000;
+        opacity: 0.4;
+    }
+    &__title {
+        font-weight: 300;
+        font-size: 3.875rem;
+        line-height: 1.45;
+        letter-spacing: -0.02em;
+        color: #000000;
+        sup {
+            top: -1.5em;
+            font-size: 30%;
+            left: -2%;
+        }
+    }
+    &__btn {
+        margin-top: 3.125rem;
+        display: flex;
+        justify-content: flex-start;
+        gap: 24px;
+    }
+}
+.button {
+    display: block;
+    width: 185px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 1s all;
+
+    &__black {
+        color: #FFFFFF;
+        background: #030304;
+        &::before {
+            content: '';
+            mask-image: url("../icons/bag.svg");
+            background: #fff;
+            width: 16px;
+            height: 20px;
+        }
+        &:hover {
+            background: #fff;
+            text-decoration: none;
+            color: #000;
+            &::before {
+                background-color: black
+            }
+        }
+        
+    }
+    &__white {
+        color: #000;
+        // background-color: #fff;
+        &::before {
+            content: '';
+            mask-image: url("../icons/play.svg");
+            background: #000;
+            width: 20px;
+            height: 20px;
+        }
+        &:hover {
+            background: #000;
+            text-decoration: none;
+            color: #fff;
+            &::before {
+                background-color: #fff;
+            }
+        }
+    }
+}
+// .numbers {
+//     position: absolute;
+//     width: 92px;
+//     display: flex;
+//     justify-content: space-between;
+//     z-index: 5;
+//     bottom: 5%;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     cursor: pointer;
+//     &__figure {
+//         display: none;
+//     }
+// }
+.active {
+    display: block;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.swiper-pagination-fraction {
+    font-weight: 700;
+    font-size: 0.8125rem;
+    color: #3A3A3A;
+    opacity: 0.62;
+    
 }
